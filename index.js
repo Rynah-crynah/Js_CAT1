@@ -1,21 +1,21 @@
 var myQuestions = [
     {
-      question: "What is 10/2?",
+      question: "How many types of scope variables are there?",
       answers: {
-        a: '3',
-        b: '5',
-        c: '115'
-      },
-      correctAnswer: 'b'
-    },
-    {
-      question: "What is 30/3?",
-      answers: {
-        a: '3',
-        b: '5',
-        c: '10'
+        a: '1',
+        b: '3',
+        c: '2'
       },
       correctAnswer: 'c'
+    },
+    {
+      question: "Inside which HTML element do we put the JavaScript?",
+      answers: {
+        a: '<script>',
+        b: '<scripting>',
+        c: '<js>'
+      },
+      correctAnswer: 'a'
     }
   ];
   
