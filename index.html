@@ -19,39 +19,41 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Quiz</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        
-        <form>
-            <label>Student Name:</label><br>
-            <input type = "text" id = "student-name"placeholder = "Enter student name"><br>
-            <label>Class;</label><br>
-            <input type = "text" id = "class" placeholder="Enter Class"><br>
-            <label>Subject:</label><br>
-             <input type = "text"  id= "subject" placeholder = "Subject"><br>
-            <label>Date:</label><br>
-             <input type = "date"  id = "date" placeholder = "Date"><br><br>
-        </form>
-        <div id="quiz"></div>
-        <button id="submit">Get Results</button>
-        <div id="results"></div>
-        <!-- <button id= "submit">Submit</button> -->
 
-        <script src="index.js">     
- const button = document.getElementById("submit");
- button.addEventListener("click", function(){
-     let name = document.getElementById("student-name").value;
-     let darasa = document.getElementById("class").value;
-     let subject = document.getElementById("subject").value;
-     let date = document.getElementById("date").value;
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 
-     let message = `Congratulations!:\n Student Name: ${name}\n Class Name: ${darasa}\n Subject: ${subject} \n Date: ${date}`;
-        alert(message);
- })
- 
-        </script>
-    </body>
+<body>
+
+    <form>
+        <label>Student Name:</label><br>
+        <input type="text" id="student-name" placeholder="Enter student name"><br>
+        <label>Class;</label><br>
+        <input type="text" id="class" placeholder="Enter Class"><br>
+        <label>Subject:</label><br>
+        <input type="text" id="subject" placeholder="Subject"><br>
+        <label>Date:</label><br>
+        <input type="date" id="date" placeholder="Date"><br><br>
+    </form>
+    <button id= "submit1">Submit</button>
+    <div id="quiz"></div>
+    <button id="submit">Get Results</button>
+    <div id="results"></div>
+  
+<script src="/index.js">
+    const button = document.getElementById("submit1");
+        button.addEventListener("click", function () {
+            let name = document.getElementById("student-name").value;
+            let darasa = document.getElementById("class").value;
+            let subject = document.getElementById("subject").value;
+            let date = document.getElementById("date").value;
+
+            let message = `Congratulations!:\n Student Name: ${name}\n Class Name: ${darasa}\n Subject: ${subject} \n Date: ${date}`;
+            alert(message);
+        })
+</script>
+</body>
+
 </html>

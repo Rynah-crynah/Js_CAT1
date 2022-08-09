@@ -1,3 +1,4 @@
+
 var myQuestions = [
     {
       question: "How many types of scope variables are there?",
@@ -11,12 +12,39 @@ var myQuestions = [
     {
       question: "Inside which HTML element do we put the JavaScript?",
       answers: {
-        a: 'script',
-        b: 'scripting',
-        c: 'js'
+        a: 'script tag',
+        b: 'scripting tag',
+        c: 'js tag'
       },
       correctAnswer: 'a'
+    },
+    {
+        question: "Where is the correct place to insert a JavaScript?",
+        answers:{
+            a:"The body section",
+            b:"Both the head section and body section are correct",
+            c: "The head section"
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question: "Is javaScript the same as Java?",
+        answers:{
+            a: 'Yes',
+            b: 'No'
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question: "------- operator is used to assign a value to a variable?",
+        answers:{
+            a: '+',
+            b: '=',
+            c: '*',
+        },
+        correctAnswer: 'b'
     }
+
   ];
   
   var quizContainer = document.getElementById('quiz');
