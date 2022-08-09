@@ -11,9 +11,9 @@ var myQuestions = [
     {
       question: "Inside which HTML element do we put the JavaScript?",
       answers: {
-        a: '<script>',
-        b: '<scripting>',
-        c: '<js>'
+        a: 'script',
+        b: 'scripting',
+        c: 'js'
       },
       correctAnswer: 'a'
     }
