@@ -24,9 +24,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="quiz"></div>
-        <button id="submit">Get Results</button>
-        <div id="results"></div>
+        
         <form>
             <label>Student Name:</label><br>
             <input type = "text" id = "student-name"placeholder = "Enter student name"><br>
@@ -37,9 +35,12 @@
             <label>Date:</label><br>
              <input type = "date"  id = "date" placeholder = "Date"><br><br>
         </form>
-        <button id= "submit">Submit</button>
+        <div id="quiz"></div>
+        <button id="submit">Get Results</button>
+        <div id="results"></div>
+        <!-- <button id= "submit">Submit</button> -->
 
-        <script src="index.js">
+        <script src="index.js">     
  const button = document.getElementById("submit");
  button.addEventListener("click", function(){
      let name = document.getElementById("student-name").value;
@@ -49,13 +50,8 @@
 
      let message = `Congratulations!:\n Student Name: ${name}\n Class Name: ${darasa}\n Subject: ${subject} \n Date: ${date}`;
         alert(message);
-                 
-
  })
+ 
         </script>
-       
-         
-         <!-- <a href="https://simplestepscode.com/javascript-quiz-tutorial/" target="_blank">Click here for the JavaScript quiz tutorial (in case you're on CodePen)</a> -->
     </body>
-    <script src="index.js"></script>
 </html>
